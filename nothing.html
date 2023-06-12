@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+      body {
+        /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+        font-family: Montserrat, sans-serif;
+        margin: 0;
+        color: white;
+        overflow: hidden; /* Hide the scrolling bar */
+        cursor: none; /* Hide the pointer */
+      }
+
+      #cursor-blob {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(
+          120deg,
+          #FF414D,
+          #002D40,
+          #D9ECF2,
+          #F56A79,
+          #1AA6B7
+        );
+        background-size: 1600% 1600%;
+        position: absolute;
+        mix-blend-mode: difference;
+        pointer-events: none;
+        z-index: 1;
+
+        transition: 0.15s linear;
+        animation: blob-radius 5s ease infinite, blob-background 15s ease infinite;
+      }
+
+      .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        background: #111111;
+      }
+
+      .link {
+        cursor: none;
+        font-size: 10vw;
+        transition: transform 0.25s ease;
+        margin-bottom: 2rem;
+      }
+
+      .link:hover {
+        transform: translateX(25px);
+      }
+
+      .button {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: inline-block;
+        background-color: #a88749;
+        color: white;
+        border: none;
+        padding: 1rem 1rem;
+        font-size: 0.8rem;
+        border-radius: 0.5rem;
+        text-align:end;
+        margin-top: 80px;
+        transition: background-color 0.3s ease;
+        cursor: none;
+      }
+      a{
+        cursor: none;
+      }
+      .button:hover {
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: #91691e;
+      }
+
+      /* Keyframes */
+      @keyframes blob-radius {
+        0%, 100% { border-radius: 43% 77% 80% 40% / 40% 40% 80% 80%; }
+        20% { border-radius: 47% 73% 61% 59% / 47% 75% 45% 73%; }
+        40% { border-radius: 46% 74% 74% 46% / 74% 58% 62% 46%; }
+        60% { border-radius: 47% 73% 61% 59% / 40% 40% 80% 80%; }
+        80% { border-radius: 50% 70% 52% 68% / 51% 61% 59% 69%; }
+      }
+
+      @keyframes blob-background {
+        0%, 100% { 
+          background-position: 0% 50%; 
+        }
+        50% { 
+          background-position: 100% 50%;
+        }
+      }
+      .icon {
+        font-size: 6vw;
+      }
+    </style>
+</head>
+<body>
+    <div id="cursor-blob"></div>
+    <div class="wrap">
+        <icon class="icon">🤷</icon>
+      <a class="link">Do Nothing</a>
+      <br><br><br>
+      <a href="index.html"><button class="button"> Back To Portfolio</button></a>
+    </div>
+    <script>
+      const blobCursor = function() {
+        const cursor = document.querySelector('#cursor-blob');
+        const link = document.querySelector('.link');
+
+        const setCursorPos = (e) => {
+          let posX = e.pageX;
+          let posY = e.pageY;
+
+          cursor.style.top = posY - (cursor.offsetHeight / 2) + 'px';
+          cursor.style.left = posX - (cursor.offsetWidth / 2) + 'px';
+        }
+
+        document.addEventListener('mousemove', setCursorPos);
+
+        const setCursorHover = function() {
+          cursor.style.transform = 'scale(2.5)';
+        }
+        const removeCursorHover = function() {
+          cursor.style.transform = '';
+        }
+
+        link.addEventListener('mouseover', setCursorHover);
+        link.addEventListener('mouseleave', removeCursorHover);
+      }
+
+      blobCursor();
+    </script>
+</body>
+</html>
