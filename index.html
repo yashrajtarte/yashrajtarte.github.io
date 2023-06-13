@@ -4,7 +4,8 @@
 		<title>Yashraj Tarte</title>
 		<link rel="shortcut icon" href="YT.ico">
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,6 +46,18 @@
 			}
 
 		</style>
+		 <script>
+			// JavaScript code to detect the device type and prompt for desktop view
+			var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+			
+			if (isMobile) {
+			  var desktopURL = "http://www.example.com";  // Replace with your desktop site URL
+			  var message = "Please switch to the desktop version of the site for a better experience. <a href='" + desktopURL + "'>Go to Desktop Site</a>";
+			  
+			  // Display the message or redirect to the desktop site
+			  document.write(message);
+			}
+		  </script>
 	</head>
 	<body class="is-preload">
 
