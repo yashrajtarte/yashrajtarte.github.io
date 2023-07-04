@@ -1,0 +1,15 @@
+👋 Welcome to my Portfolio Website!
+
+									I'm Yashraj Tarte, a passionate and dedicated individual with a strong background in <b>Electronics and Telecommunication, specializing in Computer Vision</b>. Currently pursuing my B.Tech degree at Yeshwantrao Chavan College of Engineering, I have consistently maintained an impressive academic record with a <b>Cumulative GPA of 9.03/10 and an Honors Cumulative GPA of 10/10</b>.<br>
+									
+									Throughout my educational journey, I have gained valuable knowledge and hands-on experience in various domains, including Microcontroller and Processors, Embedded Systems, Digital Signal Processing, Control System, Analog Integrated Circuits, and Image Processing. These areas have allowed me to undertake exciting projects such as an Automatic Irrigation System, Water Controller, Number Plate Detection and Isolation, and Stock Price Predictor. <br>
+									
+									My true passion lies in programming, and I excel in languages such as Java, Dart, Python, Matlab, and Apex. Additionally, I am proficient in C, C++, CSS, Kotlin, and Assembly. My familiarity with technologies like<b> GCP, SOQL/SOCL, Android, and MySQL</b> further enhances my skill set. <br>
+									
+									During my professional journey, I have honed my skills through valuable internships. As a Salesforce Developer Intern at Persistent/The Smartbridge, I successfully built a Salesforce-based application to analyze and visualize project statuses. I also made significant contributions as a Web Development Intern at EI Systems Technologies, where I worked on the front-end and UI development of the ZODION website. Furthermore, my research and development internship at Bharat Heavy Electricals Limited focused on improving the efficiency of hydroelectric power plants. <br>
+									
+									To showcase my dedication to innovation, I have undertaken impactful projects like an AI-powered Autonomous Vehicle that utilizes OpenCV and Python for autonomous navigation. Additionally, I have contributed to CureComm, a health community application connecting patients with healthcare professionals. <br>
+									
+									In recognition of my accomplishments, I have been honored as a Regional Winner in the Solving for India Hackathon and achieved a remarkable 17th position out of 2000 participants in the Codeforces Regional competition. Moreover, I actively contribute as a Technical Blogger on Hashnode and hold memberships in esteemed organizations like the Google Developers Club. <br>
+									
+									To delve deeper into my work and skills, I invite you to explore my LinkedIn profile, GitHub repository, Hashnode blog, and accounts on platforms like CodeChef, Codeforces, and LeetCode. Additionally, I have obtained relevant certificates that validate my expertise in various areas.
