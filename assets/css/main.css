@@ -4974,21 +4974,18 @@ body {
 
 
 
-/********* Fonts Face CSS End **********/
+
 
 /******* Common Element CSS Start ******/
 
-body {
+.carousel_body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 .clear {
   clear: both;
 }
-img {
-  max-width: 100%;
-  border: 0px;
-}
+
 ul,
 ol {
   list-style: none;
@@ -5010,16 +5007,8 @@ a:hover {
 a:hover {
   color: #e73700;
 }
-h2 {
-  margin-bottom: 48px;
-  padding-bottom: 16px;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
-  position: relative;
-  text-transform: capitalize;
-}
-h3 {
+
+.carousel_h3 {
   margin: 0 0 10px;
   font-size: 28px;
   line-height: 36px;
@@ -5031,26 +5020,19 @@ button {
 
 /* -------- title style ------- */
 .line-title {
-  position: relative;
-  width: 400px;
-}
-.line-title::before,
-.line-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 4px;
-  border-radius: 2px;
-}
-.line-title::before {
-  width: 100%;
-  background: #f2f2f2;
-}
-.line-title::after {
-  width: 32px;
-  background: #e73700;
-}
+	position: center;
+	width: 400px;
+	text-justify: center;
+  }
+
+  .line-title::before {
+	width: 100%;
+	background: #f2f2f2;
+  }
+  .line-title::after {
+	width: 32px;
+	background: #e73700;
+  }
 
 /******* Middle section CSS Start ******/
 /* -------- Landing page ------- */
@@ -5108,14 +5090,14 @@ button {
   transform: none;
   -webkit-transform: none;
 }
-.game-section .item-desc p {
+.game-section .item-desc .carousel_p {
   opacity: 0;
   -webkit-transform: translateY(32px);
   transform: translateY(32px);
   transition: all 0.4s ease-in-out 0.2s;
   -webkit-transition: all 0.4s ease-in-out 0.2s;
 }
-.game-section .item.active .item-desc p {
+.game-section .item.active .item-desc .carousel_p {
   opacity: 1;
   -webkit-transform: translateY(0);
   transform: translateY(0);
@@ -5130,38 +5112,38 @@ button {
 /***** responsive css Start ******/
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  h2 {
-    margin-bottom: 32px;
+	.line-title {
+	  margin-bottom: 32px;
+	}
+	.carousel_h3 {
+	  margin: 0 0 8px;
+	  font-size: 24px;
+	  line-height: 32px;
+	}
+  
+	/* -------- Landing page ------- */
+	.game-section {
+	  padding: 50px 30px;
+	}
+	.game-section .item {
+	  margin: 0 12px 60px;
+	  width: 260px;
+	  height: 360px;
+	}
+	.game-section .item.active {
+	  width: 400px;
+	}
+	.game-section .item-desc {
+	  transform: translateY(calc(100% - 46px));
+	  -webkit-transform: translateY(calc(100% - 46px));
+	}
   }
-  h3 {
-    margin: 0 0 8px;
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  /* -------- Landing page ------- */
-  .game-section {
-    padding: 50px 30px;
-  }
-  .game-section .item {
-    margin: 0 12px 60px;
-    width: 260px;
-    height: 360px;
-  }
-  .game-section .item.active {
-    width: 400px;
-  }
-  .game-section .item-desc {
-    transform: translateY(calc(100% - 46px));
-    -webkit-transform: translateY(calc(100% - 46px));
-  }
-}
 
 @media (min-width: 768px) and (max-width: 991px) {
-  h2 {
+.line-title {
     margin-bottom: 32px;
   }
-  h3 {
+  .carousel_h3 {
     margin: 0 0 8px;
     font-size: 24px;
     line-height: 32px;
@@ -5192,10 +5174,10 @@ button {
   body {
     font-size: 14px;
   }
-  h2 {
+.line-title {
     margin-bottom: 20px;
   }
-  h3 {
+  .carousel_h3 {
     margin: 0 0 8px;
     font-size: 19px;
     line-height: 24px;
@@ -5224,5 +5206,14 @@ button {
     -webkit-transform: translateY(calc(100% - 42px));
   }
 }
+
+.image.fit.pp {
+	display: block;
+	margin: 1.5rem 0;
+	width: 350%;
+	border-radius: 25px;
+}
+
+
 
 
